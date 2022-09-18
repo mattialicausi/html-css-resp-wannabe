@@ -128,17 +128,29 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
+ @media screen and (min-width: 769px) and (max-width: 1160px) {
+    .container{
+        min-width: 769px;
+        max-width: 1160px;
+        width: 100%;
+    }
+
+}
+ 
 @media screen and (max-width: 768px) {
     .container{
-        width: 768px;
-        margin: 0 auto;
+        width: 100%;
     }  
+    
+   
 }
 
 @media  screen and (max-width: 480px) {
     .container{
-        width: 480px;
-        margin: 0;
+        max-width: 480px;
+        width: 100%;
+        text-align: center;
+        padding: 0;
         
     }
     .row{
@@ -146,20 +158,65 @@ img {
         flex-direction: column;
         align-items: center;
     }
-
-   .text{
-      margin: 0 -60px;
-      text-align: center;
+        /* MODIFICO STEPS */
+   .steps .text-center p{
+         width: 100%;
    }
-
-   .card{
-    width: 180px;
-   }  
-
-   .steps .container{
-        padding-right: 70px;
+   
+   .steps .col{
+        padding: 0;
+        width: calc(100% / 1);
    }
+   .steps .col img {
+    height: 200px;
+    padding: 0 10px;
 }
+    .text{
+        padding: 30px 40px;
+    }
+        /* MODIFICO LESSONS */
+
+    .lessons img{
+        height: 200px;
+        padding: 0 10px;
+    }
+
+    .lessons p{
+        width: 100%;
+    }
+
+    .lessons .col{
+        padding: 0;
+        width: calc(100% / 1);
+   }
+
+    /* MODIFICO WHY US */
+
+    .why-us img{
+        height: 200px;
+        padding: 0 10px;
+    }
+
+    .why-us p{
+        width: 100%;
+
+    }
+
+    .why-us .col{
+        padding: 0;
+        width: calc(100% / 1);
+        padding: 30px 40px;
+   }
+
+   .why-us h2{
+        padding: 0 20px;
+   }
+
+
+
+}
+
+
 
 
 
